@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "抖音直播助手（无发券版）",
+  "version": "2.2.0",
+  "description": "商品轮换讲解、原生快捷评论、随机置顶、商品列表同步和异常恢复。用户手动开始后运行。",
+  "icons": {"16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png"},
+  "action": {"default_title": "抖音直播助手", "default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["https://eos.douyin.com/livesite/live/current*"],
+    "js": ["content.js"],
+    "run_at": "document_idle",
+    "all_frames": false,
+    "world": "ISOLATED"
+  }]
+}

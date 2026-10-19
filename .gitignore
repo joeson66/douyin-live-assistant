@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+*.log
+.env
+.env.*
+*.backup.*
+release/
+mac-offline-install/
+screenshots/
+*.zip
+*.crx
+*.pem

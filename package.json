@@ -1,0 +1,16 @@
+{
+  "name": "douyin-live-assistant",
+  "version": "2.2.0",
+  "private": true,
+  "description": "直播商品轮换讲解、原生快捷回复、评论置顶和货架同步。",
+  "license": "MIT",
+  "scripts": {
+    "build": "python3 build-extension.py",
+    "test": "node --test test.cjs extension-package.test.cjs privacy.test.cjs",
+    "test:extension": "DOUYIN_TEST_SCRIPT=chrome-extension/content.js node --test test.cjs",
+    "check": "node --check douyin-live-auto.user.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
